@@ -3,14 +3,6 @@
 # ---------------------------------------------------------
 
 def merge_sort(arr):
-    """
-    Sorts a list using Merge Sort algorithm.
-
-    Steps:
-    1. Divide the list into two halves.
-    2. Recursively sort each half.
-    3. Merge the sorted halves.
-    """
 
     if len(arr) <= 1:
         return arr
