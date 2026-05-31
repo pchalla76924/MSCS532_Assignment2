@@ -1,4 +1,4 @@
-# MSCS532_Assignment2
+﻿# MSCS532_Assignment2
 
 This repository contains Python implementations of Merge Sort and Quick Sort using both static and dynamic approaches, plus a benchmark script to compare performance.
 
@@ -13,40 +13,42 @@ This repository contains Python implementations of Merge Sort and Quick Sort usi
 ## Algorithms included
 
 - Merge Sort: divides the list into halves, recursively sorts each half, then merges the two sorted halves.
-
-
 - Quick Sort: partitions the array around a pivot, then recursively sorts the partitions.
 
-### Comparisions for different datasets
+## Example benchmark results
 
-`Algorithm    | Dataset         | Time (ms)        | Peak Memory (KiB)`
----------------------------------------------------------------------------
+### Dataset size: 500
 
---- `Dataset size: 500` ---
-Merge Sort   | Sorted          |        5.252 ms |        10.507812 KiB
-Quick Sort   | Sorted          |       62.553 ms |        15.125000 KiB
-Merge Sort   | Reverse Sorted  |        2.471 ms |         9.796875 KiB
-Quick Sort   | Reverse Sorted  |       99.521 ms |        12.093750 KiB
-Merge Sort   | Random          |        3.421 ms |         8.281250 KiB
-Quick Sort   | Random          |        0.833 ms |         0.000000 KiB
+| Algorithm   | Dataset         | Time (ms) | Peak Memory (KiB) |
+|------------|-----------------|----------:|------------------:|
+| Merge Sort | Sorted          | 5.252     | 10.507812         |
+| Quick Sort | Sorted          | 62.553    | 15.125000         |
+| Merge Sort | Reverse Sorted  | 2.471     | 9.796875          |
+| Quick Sort | Reverse Sorted  | 99.521    | 12.093750         |
+| Merge Sort | Random          | 3.421     | 8.281250          |
+| Quick Sort | Random          | 0.833     | 0.000000          |
 
---- `Dataset size: 1000` ---
-Merge Sort   | Sorted          |        7.396 ms |        19.531250 KiB
-Quick Sort   | Sorted          |      878.855 ms |        43.343750 KiB
-Merge Sort   | Reverse Sorted  |        9.775 ms |        19.531250 KiB
-Quick Sort   | Reverse Sorted  |     1609.299 ms |        43.343750 KiB
-Merge Sort   | Random          |        5.087 ms |        16.757812 KiB
-Quick Sort   | Random          |        1.656 ms |         0.000000 KiB
+### Dataset size: 1000
 
---- `Dataset size: 2000` ---
-Merge Sort   | Sorted          |       15.827 ms |        39.062500 KiB
-Quick Sort   | Sorted          |     9553.995 ms |       105.843750 KiB
-Merge Sort   | Reverse Sorted  |        9.519 ms |        39.062500 KiB
-Quick Sort   | Reverse Sorted  |    11328.217 ms |       105.843750 KiB
-Merge Sort   | Random          |       15.823 ms |        33.140625 KiB
-Quick Sort   | Random          |       12.404 ms |         0.000000 KiB
+| Algorithm   | Dataset         | Time (ms) | Peak Memory (KiB) |
+|------------|-----------------|----------:|------------------:|
+| Merge Sort | Sorted          | 7.396     | 19.531250         |
+| Quick Sort | Sorted          | 878.855   | 43.343750         |
+| Merge Sort | Reverse Sorted  | 9.775     | 19.531250         |
+| Quick Sort | Reverse Sorted  | 1609.299  | 43.343750         |
+| Merge Sort | Random          | 5.087     | 16.757812         |
+| Quick Sort | Random          | 1.656     | 0.000000          |
 
+### Dataset size: 2000
 
+| Algorithm   | Dataset         | Time (ms) | Peak Memory (KiB) |
+|------------|-----------------|----------:|------------------:|
+| Merge Sort | Sorted          | 15.827    | 39.062500         |
+| Quick Sort | Sorted          | 9553.995  | 105.843750        |
+| Merge Sort | Reverse Sorted  | 9.519     | 39.062500         |
+| Quick Sort | Reverse Sorted  | 11328.217 | 105.843750        |
+| Merge Sort | Random          | 15.823    | 33.140625         |
+| Quick Sort | Random          | 12.404    | 0.000000          |
 
 ## Usage
 
@@ -57,4 +59,3 @@ python benchmark.py
 ```
 
 Or execute one of the algorithm files directly to test sorting behavior and compare results.
-
