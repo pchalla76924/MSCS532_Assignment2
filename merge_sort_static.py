@@ -26,7 +26,7 @@ def merge(left, right):
 
     # Compare and merge elements
     while i < len(left) and j < len(right):
-        if left[i] <= right[j]:   # ✅ Fixed bug here (important)
+        if left[i] <= right[j]:   
             merged.append(left[i])
             i += 1
         else:
